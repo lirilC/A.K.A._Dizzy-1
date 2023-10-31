@@ -5,7 +5,7 @@
     <meta name="view port" content="width=1000, initial-scale=1.0, maximum-scale=1.0">
 
     <title>
-        ...¡Puedes editar los proyectos!; hum... ¡intenta arreglar los proyectos con módulos! | Posts | Luis Eduardo Gallego García | liril
+        ...¡Puedes editar los proyectos!; hum... ¡intenta arreglar los proyectos con módulos! Ja, ja, ja. Sé MUUUUUY cuidadoso con los módulos. ¡NO los modifiques! | Posts | Luis Eduardo Gallego García | liril
     </title>
     <link rel="shortcut icon" type="image/ico" href="/resources/icons/favicon.ico"  />
     
@@ -26,7 +26,6 @@
     </script>
     <script src="/js/user/modernizr.custom.js"></script>
     <script src="/js/jquery.js"></script>
-    <!--<script type="text/javascript" src= "js/jquery.circlemouse.js"></script> //Thanks to Mary Lou from Codrops, this helped me a lot!-->
     <script src="/js/user/main.js"></script>
     <script src="/js/jquery.dotdotdot.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="/js/jquery.jplayer.min.js"></script> 
@@ -38,150 +37,6 @@
     <script src="/js/video.js"></script>
     <script src="/js/audio.min.js"></script>
     <script src= "/js/imgStatic/main.js"></script>
-    <script type="text/javascript">
-  $(function () {
-      $.widget("ui.tooltip", $.ui.tooltip, {
-          options: {
-              content: function () {
-                  return $(this).prop('title');
-              }
-          }
-      });
-      
-$('.username').tooltip({
-    items: 'a.target',
-    open: function(event, ui)
-    {
-        if (typeof(event.originalEvent) === 'undefined')
-        {
-            return false;
-        }
-        $(".knob").knob();
-        var $id = $(ui.tooltip).attr('id');
-        
-        // close any lingering tooltips
-        $('div.ui-tooltip').not('#' + $id).remove();
-        
-        // ajax function to pull in data and add it to the tooltip goes here
-    },
-    close: function(event, ui)
-    {
-        ui.tooltip.hover(function()
-        {
-            $(this).stop(true).fadeTo(400, 1); 
-        },
-        function()
-        {
-            $(this).fadeOut('400', function()
-            {
-                $(this).remove();
-            });
-        });
-    }
-});  });
-</script>
-
-   <script>
-        $(function ($) {
-
-            $(".knob").knob({
-                change: function (value) {
-                    //console.log("change : " + value);
-                },
-                release: function (value) {
-                    //console.log(this.$.attr('value'));
-                    console.log("release : " + value);
-                },
-                cancel: function () {
-                    console.log("cancel : ", this);
-                },
-                /*format : function (value) {
-                  return value + '%';
-                  }
-                  ,*/
-                draw: function () {
-
-                    // "tron" case
-                    if (this.$.data('skin') == 'tron') {
-
-                        this.cursorExt = 0.3;
-
-                        var a = this.arc(this.cv) // Arc
-                            ,
-                            pa // Previous arc
-                            , r = 1;
-
-                        this.g.lineWidth = this.lineWidth;
-
-                        if (this.o.displayPrevious) {
-                            pa = this.arc(this.v);
-                            this.g.beginPath();
-                            this.g.strokeStyle = this.pColor;
-                            this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, pa.s, pa.e, pa.d);
-                            this.g.stroke();
-                        }
-
-                        this.g.beginPath();
-                        this.g.strokeStyle = r ? this.o.fgColor : this.fgColor;
-                        this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, a.s, a.e, a.d);
-                        this.g.stroke();
-
-                        this.g.lineWidth = 2;
-                        this.g.beginPath();
-                        this.g.strokeStyle = this.o.fgColor;
-                        this.g.arc(this.xy, this.xy, this.radius - this.lineWidth + 1 + this.lineWidth * 2 / 3, 0, 2 * Math.PI, false);
-                        this.g.stroke();
-
-                        return false;
-                    }
-                }
-            });
-
-            // Example of infinite knob, iPod click wheel
-            var v, up = 0,
-                down = 0,
-                i = 0,
-                $idir = $("div.idir"),
-                $ival = $("div.ival"),
-                incr = function () {
-                    i++;
-                    $idir.show().html("+").fadeOut();
-                    $ival.html(i);
-                },
-                decr = function () {
-                    i--;
-                    $idir.show().html("-").fadeOut();
-                    $ival.html(i);
-                };
-            $("input.infinite").knob({
-                min: 0,
-                max: 20,
-                stopper: false,
-                change: function () {
-                    if (v > this.cv) {
-                        if (up) {
-                            decr();
-                            up = 0;
-                        } else {
-                            up = 1;
-                            down = 0;
-                        }
-                    } else {
-                        if (v < this.cv) {
-                            if (down) {
-                                incr();
-                                down = 0;
-                            } else {
-                                down = 1;
-                                up = 0;
-                            }
-                        }
-                    }
-                    v = this.cv;
-                }
-            });
-        });
-    </script>
 </head>
 
 <body>
@@ -257,8 +112,11 @@ $('.username').tooltip({
                 <div id="otherContainments" class= "visible">
                   <div>
                     <section id="links">
-                        <a class="link" target="_blank" href="/whale_Shailene/p/l8dDch127S1c9"><span class="Title">Hello_World</span><span class="linktype">Proyecto</span></a>
+                        <a class="link" target="_blank" href="/A.K.A._Dizzy/p/k9u8hH78jJi27"><span class="Title">Robot De Dedicatorias</span><span class="linktype">Proyecto</span></a>
                     </section>
+                    <text>
+                        <p style="color: #aaa; text-align: left;">Actualización: Puedes ver los archivos con las ediciones que les hayas hecho en el Raw&nbsp&nbspdándole click derecho al botón del Raw&nbsp</p>
+                    </text>
                   </div>
                 </div>
             </section>
@@ -283,7 +141,7 @@ $('.username').tooltip({
               </div>">Luis Eduardo Gallego García</a> <br><span title= "3 de Julio de 2022 a las 0:52 am" class="time">3 de Julio a las 0:52 am</span></p>
             </div>
             <div class="description" style="padding-top: 76px;">
-                <p class="title">...¡Puedes editar los proyectos!; hum... ¡intenta arreglar los proyectos con módulos!</p>
+                <p class="title">...¡Puedes editar los proyectos!; <strike>hum... ¡intenta arreglar los proyectos con módulos!</strike> Ja, ja, ja. Sé MUUUUUY cuidadoso con los módulos. ¡NO los modifiques!</p>
                 <section class="more"></section>
             
             </div>
